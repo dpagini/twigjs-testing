@@ -1,0 +1,23 @@
+{
+  "site": {
+    "title": "Twig JS Testing",
+    "ga": "",
+    "nav": {
+      "primary": {
+        "items": [
+          { "text": "Item 1", "url": "#" },
+          { "text": "Item 2", "url": "#" },
+          { "text": "Item 3", "url": "#" },
+          { "text": "Item 4", "url": "#" },
+          { "text": "Item 5", "url": "#" }
+        ]
+      }
+    }
+  },
+  "page": {
+    "title": "",
+    "description": "",
+    "stylesheets": [],
+    "scripts": []
+  }
+}

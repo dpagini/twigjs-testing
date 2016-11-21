@@ -1,0 +1,30 @@
+{# twig/base/page.twig #}
+
+<div class="page">
+  <a href="#main-content" class="visually-hidden focusable skip-link">Skip to main content</a>
+
+  {% block header %}
+  {% include "base/header.twig" %}
+  {% endblock header %}
+
+  {% block menu %}{% endblock menu %}
+
+  {{ page.primary_menu }}
+  {{ page.secondary_menu }}
+  {{ page.breadcrumb }}
+  {{ page.highlighted }}
+  {{ page.help }}
+  {{ page.content }}
+
+  {% block footer %}
+  {% include "base/footer.twig" %}
+  {% endblock footer %}
+</div>
+
+<!--[if lte IE 9]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+{% block script %}
+{% include "base/script.twig" %}
+{% endblock script %}

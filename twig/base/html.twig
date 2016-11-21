@@ -1,0 +1,26 @@
+{# twig/base/html.twig #}
+
+{#
+/**
+ * @file
+ * Component for an HTML document.
+ *
+ * Variables:
+ * - html_attributes: [string] Attributes for the HTML element.
+ * - title: [string] The page title.
+ * - body_attributes: [string] Attributes for the BODY element.
+ * - content: [string] The component contents.
+ */
+#}
+<html{% block html_attributes %}{% endblock html_attributes %}>
+  <head>
+  {% block head %}
+    <title>{{ title }}</title>
+  {% endblock head %}
+  </head>
+  <body{% block body_attributes %}{% endblock body_attributes %}>
+    {% block body %}
+      {{ content }}
+    {% endblock body %}
+  </body>
+</html>

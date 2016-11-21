@@ -1,0 +1,25 @@
+{
+  "name": "twigjs-testing",
+  "version": "0.0.0",
+  "description": "A twig test package.",
+  "private": true,
+  "repository": {},
+  "devDependencies": {
+    "babel-core": "^6.0.15",
+    "babel-preset-es2015": "^6.0.15",
+    "browser-sync": "^2.17.0",
+    "gulp": "3.9.x",
+    "gulp-load-plugins": "^1.3.0",
+    "gulp-twig": "^0.7.0",
+    "twig-markdown": "^0.1.2"
+  },
+  "engines": {
+    "node": "4.4.x"
+  },
+  "scripts": {
+    "install-tools": "npm install;",
+    "uninstall-tools": "rm -r node_modules;",
+    "build": "gulp drupal",
+    "build:dev": "gulp drupal:dev"
+  }
+}

@@ -1,0 +1,16 @@
+{# twig/base/script.twig #}
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script>window.jQuery || console.log('No jQuery.');</script>
+
+{% for script in scripts %}
+<script src="{{ script }}"></script>
+{% endfor %}
+
+{% if ga %}
+<script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','{{ ga }}','auto');ga('send','pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+{% endif %}

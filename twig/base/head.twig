@@ -1,0 +1,15 @@
+{# twig/base/head.twig #}
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>{{ title }}</title>
+{% if description %}
+<meta name="description" content="{{ description }}">
+{% endif %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% for stylesheet in stylesheets %}
+<link rel="stylesheet" href="{{ stylesheet }}" />
+{% endfor %}
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
