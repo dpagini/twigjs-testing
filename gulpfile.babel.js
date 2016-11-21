@@ -47,8 +47,8 @@ options.twig = {
 gulp.task('default', ['twig','server','watch']);
 
 gulp.task('twig', () => {
-  var data = require('./twig/test/config.json');
-  return html('./twig/test/**/*.html', options.paths.build, data);
+  var data = require('./site/config.json');
+  return html('./site/**/*.html', options.paths.build, data);
 });
 
 function html(src, dest, data) {
